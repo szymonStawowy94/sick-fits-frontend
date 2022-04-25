@@ -1,7 +1,15 @@
+import Link from 'next/link';
+import Nav from './Nav';
+
 export default function Header() {
   return (
     <header>
-      <p>I am the header</p>
+      <div className="bar">Sick fits</div>
+      <Link href="/">Sick fits </Link>
+      <div className="sub-bar">
+        <p>Search</p>
+      </div>
+      <Nav />
     </header>
   );
 }
